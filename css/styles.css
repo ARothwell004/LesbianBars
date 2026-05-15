@@ -1,0 +1,568 @@
+html {
+    box-sizing:border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* General */
+h1 {
+    font-family: lily Script One;
+}
+
+p {
+    font-family: LXGW WenKai Mono TC;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.point {
+    height: 120px;
+    width: 120px;
+    position: fixed;
+        right: 20px;
+        bottom: 20px;
+}
+.point:hover {
+    animation: spin 1s;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+/* home */
+    .wholehome {
+        background-color: #fff8f6;
+        background-image: url(../Images/homepatterns-01.png);
+    }
+    .headerhome {
+        color: #8b0505;
+    }
+    .namehome {
+        color: #8b0505;
+    }
+    .facts {
+        color: #8b0505;
+    }
+    .findhome {
+        color: #8b0505;
+    }
+    .headerhome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFB39F;
+        padding: 30px 70px;
+        font-size: 40px;
+        height: 150px;
+        padding-bottom: 60px;
+        --mask:
+    radial-gradient(32.31px at 50% calc(100% - 42px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% calc(100% + 12px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    }
+    .namehome {
+        text-align: center;
+        padding: 200px 0px;
+        font-size: 100px;
+    }
+    .facts {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        place-items: center;
+    }
+    .fact {
+        background-color: #FFB39F;
+        text-align: center;
+        width: 900px;
+        height: 170px;
+        border-radius: 70px;
+        font-size: 30px;
+        justify-content: center;
+        line-height: 75px;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .findhome {
+        text-align: center;
+        background-color: #8b0505;
+        width: 500px;
+        height: 150px;
+        color: #fff8f6;
+        border-radius: 70px;
+        font-size: 60px;
+        justify-content: center;
+        line-height: 150px;
+    }
+    .somebs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 70px;
+        font-size: 40px;
+    }
+    .scrollbarhome {
+    width: 3000px;
+	height: 0%;
+	background: #FF7755;
+	position: fixed;
+    bottom: 0;
+    z-index: -1;
+      --mask:
+    radial-gradient(32.31px at 50% 42px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% -12px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          animation: sway 10s infinite;
+}
+@keyframes sway {
+    0%, 100%{left: -100px;}
+    50% {left: -300px;}
+}
+
+/* history */
+    .historywhole {
+        background-color: #fff9ee;
+        background-image: url(../Images/patterns-02.png);
+    }
+    .headerhistory {
+        color: #9a4500;
+    }
+    .namehistory {
+        color: #9a4500;
+    }
+    .parahistory {
+        color: #9a4500;
+    }
+    .headerhistory {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFCAA9;
+        padding: 30px 70px;
+        font-size: 40px;
+        height: 150px;
+        padding-bottom: 60px;
+        --mask:
+    radial-gradient(32.31px at 50% calc(100% - 42px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% calc(100% + 12px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    }
+    .namehistory {
+        text-align: center;
+        padding: 350px;
+        font-size: 100px;
+    }
+    .orange {
+        background-color: #ffcaa9;
+        border-radius: 50px;
+        width: 1000px;
+        place-self: center;
+        min-height: 100vh;
+        margin: 30px;
+    }
+    .hist {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        place-items: center;
+        padding: 40px;
+    }
+    .parahistory {
+        height: 200px;
+        border-radius: 70px;
+        font-size: 30px;
+        justify-content: center;
+    }
+    .pictwins {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        place-items: center;
+    }
+    .wpf {
+        max-width: 800px;
+        position: relative;
+        margin: 50px;
+        top: 50px;
+    }
+    .bwpr {
+        max-width: 800px;
+        position: relative;
+        margin: 30px;
+        top: 65px;
+    }
+    .bwtw {
+        height: 500px
+    }
+    .scrollbarhist {
+    width: 2000px;
+	height: 0%;
+	background: #FF9A5A;
+	position: fixed;
+    bottom: 0;
+    z-index: -1;
+      --mask:
+    radial-gradient(32.31px at 50% 42px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% -12px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          animation: sway 10s infinite;
+}
+
+    
+
+/* closure */
+    .reasonhist {
+        color: #9a4500;
+    }
+    .res {
+        place-items: center;
+    }
+    .reshis {
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        padding: 40px;
+        background-color: #FFCAA9;
+        border-radius: 50px;
+        color: #9a4500;
+        text-align: left;
+        max-width: 1100px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+
+    }
+    .numb {
+        color: #9a4500;
+        font-size: 120px;
+        grid-area: 1 / 1 / 2 / 2;
+        padding: 30px;
+    }
+    .resword {
+        font-size: 30px;
+        grid-area: 1 / 2 / 2 / 6;
+        column-span: all;
+    }
+    .restext {
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+    
+
+/* my experience */
+    .expwhole {
+        background-color: #fff4fa;
+        background-image: url(../Images/exppatterns-03.png);
+    }
+    .headerexp {
+        color: #8d0d57;
+    }
+    .nameexp {
+        color: #8d0d57;
+    }
+    .exp {
+        color: #8d0d57;
+    }
+    .headerexp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F5BEDE;
+        padding: 30px 70px;
+        font-size: 40px;
+        height: 150px;
+        padding-bottom: 60px;
+        --mask:
+    radial-gradient(32.31px at 50% calc(100% - 42px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% calc(100% + 12px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    }
+    .nameexp {
+        text-align: center;
+        padding: 310px;
+        font-size: 100px;
+    }
+    .exp {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        place-items: center;
+        padding: 40px;
+        font-size: 30px;
+    }
+    .me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        place-self: center;
+        background-color: #F5BEDE;
+        border-radius: 50px;
+        padding: 30px 70px;
+        font-size: 40px;
+        width: 1100px;
+        margin: 30px;
+    }
+    .clubicon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        place-self: center;
+        background-color: #F5BEDE;
+        border-radius: 50px;
+        padding: 30px 70px;
+        font-size: 40px;
+        width: 1100px;
+        margin: 30px;
+    }
+    .clic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        column-gap: 30px;
+    }
+    .eastview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        place-self: center;
+        background-color: #F5BEDE;
+        border-radius: 50px;
+        padding: 30px 70px;
+        font-size: 40px;
+        width: 1100px;
+        margin: 30px;
+    }
+    .expt {
+        font-size: 100px;
+    }
+    .mepic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        place-items: center;
+    }
+    .mepica {
+        grid-area: 1 / 1 / 3 / 2; 
+        position: relative;
+        bottom: 100px;
+    }
+    .mepicb {
+       grid-area: 2 / 2 / 4 / 3; 
+       position: relative;
+       bottom: 200px;
+    }
+    .mepicc {
+        grid-area: 3 / 1 / 5 / 2;
+        position: relative;
+        bottom: 70px;
+    }
+    .scrollbarexp {
+    width: 2000px;
+	height: 0%;
+	background: #F67FC4;
+	position: fixed;
+    bottom: 0;
+    z-index: -1;
+      --mask:
+    radial-gradient(32.31px at 50% 42px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% -12px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          animation: sway 10s infinite;
+}
+
+
+/* thirty six */
+    .whole36 {
+        background-color: #fff8ff;
+        background-image: url(../Images/36patterns-04.png)
+    }
+    .header36 {
+        color: #8d0d57;
+    }
+    .name36 {
+        color: #8d0d57;
+    }
+    .cities {
+        color: #8d0d57;
+    }
+    .region {
+        color: #8d0d57;
+    }
+    .header36 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D0C7F2;
+        padding: 30px 70px;
+        font-size: 40px;
+        height: 150px;
+        padding-bottom: 60px;
+        --mask:
+    radial-gradient(32.31px at 50% calc(100% - 42px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% calc(100% + 12px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    }
+    .name36 {
+        text-align: center;
+        padding: 295px;
+        font-size: 100px;
+    }
+    .region {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 50px;
+        text-align: center;
+        row-gap: 50px;
+        column-gap: 50px;
+        max-width: 1000px;
+    }
+    .all {
+        place-items: center;
+        margin: 30px;
+    }
+    .regiontitle {
+        font-size: 100px;
+        text-align: center;
+        color: #fff8ff;
+        background: #8d0d57;
+        width: 500px;
+        height: 150px;
+        border-radius: 50px;
+        line-height: 150px;
+        margin: 50px;
+    }
+    .barloco {
+        background-color: #D0C7F2;
+        border-radius: 50px;
+        padding: 20px 10px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .cities {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        font-size: 40px;
+        padding: 30px;
+        color: #fff8ff;
+        line-height: 130px;
+        justify-content: center;
+        column-gap: 50px;
+    }
+    .citiesbar {
+        width: 290px;
+        height: 130px;
+        background: #c27ec1;
+        border-radius: 50px;
+    }
+    .picedit {
+        width: 300px;
+        height: auto;
+    }
+    .scrollbar {
+    width: 2000px;
+	height: 0%;
+	background: #C27EC1;
+	position: fixed;
+    bottom: 0;
+    z-index: -1;
+      --mask:
+    radial-gradient(32.31px at 50% 42px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(32.31px at 50% -12px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          animation: sway 10s infinite;
+}
+   
+
+/* milwuakee */
+    .headermil {
+        color: #8d0d57;
+    }
+    .namemil {
+        color: #8d0d57;
+    }
+    .sectionmil {
+        font-size: 100px;
+        text-align: center;
+        color: #fff8ff;
+        background: #8d0d57;
+        width: 600px;
+        height: 150px;
+        border-radius: 50px;
+        line-height: 150px;
+        margin: 50px; 
+    }
+    .bsbs {
+        color: #8d0d57;
+        font-size: 30px;
+        padding: 40px;
+        background-color: #D0C7F2;
+        border-radius: 50px;
+        width: 1200px;
+        line-height: 80px;
+        margin: 30px;
+    }
+    .gov {
+        font-size: 70px;
+    }
+    .pintgrid {
+        display: flex;
+        grid-column: 1fr 1fr;
+        align-items: center;
+    }
+    .chigrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: center;
+    }
+    .pintpic {
+        width: 500px;
+        position: relative;
+        left: 125px;
+    }
+    .dono {
+        width: 300px;
+    }
+
+
+    
+
+/* chicago */
+
+
+/* madison */
